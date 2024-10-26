@@ -1,0 +1,93 @@
+/* Basic reset and background styling */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-color: #f0f0f0; /* Fallback background color */
+}
+
+/* Blurry background image */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.igp.com/blog/wp-content/uploads/2022/03/How-to-impress-a-girl.jpg') no-repeat center center/cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* Content styling */
+.content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Styling for "Will you be my Bandi?" */
+.bold-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+/* Adding hearts around the text */
+.bold-text:before,
+.bold-text:after {
+    content: "❤️";
+    font-size: 24px;
+    margin: 0 10px;
+    position: absolute;
+    top: 0;
+}
+
+.bold-text:before {
+    left: -30px;
+}
+
+.bold-text:after {
+    right: -30px;
+}
+
+/* Button styling */
+.button-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Increase gap between buttons */
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Yes button styling */
+.yes-button {
+    background-color: red;
+}
+
+/* No button styling */
+.no-button {
+    background-color: gray;
+}
